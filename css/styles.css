@@ -1,0 +1,70 @@
+/* Basic layout and typography */
+:root {
+    --site-max: 1100px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding-top: 72px; /* space for fixed navbar */
+  }
+  
+  .section-pad {
+    padding: 64px 0;
+  }
+  
+  .container {
+    max-width: var(--site-max);
+  }
+  
+  /* Profile image */
+  .profile-img {
+    max-width: 260px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  /* Carousel images */
+  .carousel-img {
+    height: 420px;
+    object-fit: cover;
+  }
+  
+  /* Flexbox example requirement */
+  footer .container {
+    display: flex;
+  }
+  
+  /* Hover and transition examples */
+  a, .btn, .card {
+    transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  /* Improve section headings slightly */
+  h2 {
+    letter-spacing: 0.2px;
+  }
+  
+  /* Make schedule table feel tighter on small screens */
+  .table td, .table th {
+    white-space: nowrap;
+  }
+  
+  /* Responsive tweak */
+  @media (max-width: 576px) {
+    .carousel-img {
+      height: 260px;
+    }
+  }
+  

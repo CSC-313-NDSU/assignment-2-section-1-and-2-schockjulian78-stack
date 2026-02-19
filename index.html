@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julian Schock | Personal Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">My Personal Site</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section id="home" class="section-pad bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5 text-center">
+            <img class="profile-img img-fluid" src="images/profile.jpg" alt="Profile image" />
+          </div>
+          <div class="col-md-7">
+            <h1 class="display-6 fw-bold mb-2">Hi, I’m Julian Schock</h1>
+            <p class="lead mb-3">
+              Computer Science student interested in web development, security, and building practical tools.
+            </p>
+
+            <address class="mb-3">
+              <strong>Address:</strong><br />
+              1013 11th St N<br />
+              Fargo, ND 58102<br />
+              <span class="text-muted">Phone:</span> (701) 989 1026
+            </address>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-primary" href="#portfolio">View Projects</a>
+              <a class="btn btn-outline-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="mt-5">
+          <h2 class="h4 fw-semibold mb-3">Highlights</h2>
+
+          <div id="interestCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Interest image carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="images/slide1.jpg" class="d-block w-100 carousel-img" alt="Slide 1 image" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Building</h5>
+                  <p>Small projects that solve real problems</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide2.jpg" class="d-block w-100 carousel-img" alt="Slide 2 image" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learning</h5>
+                  <p>Always leveling up skills and fundamentals</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide3.jpg" class="d-block w-100 carousel-img" alt="Slide 3 image" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Creating</h5>
+                  <p>Design, code, iterate, ship</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#interestCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#interestCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <article class="mb-4">
+          <p>
+            I’m a student at NDSU in my senior year focusing on programming fundamentals, web development, and practical projects.
+            I like building interesting UIs and learning how different tools and software work.
+          </p>
+        </article>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5 fw-semibold">Favorite Movies</h3>
+            <ul>
+              <li>Sinners</li>
+              <li>Brother Bear</li>
+              <li>Interstellar</li>
+              <li>The Social Network</li>
+            </ul>
+
+            <h3 class="h5 fw-semibold mt-4">Hobbies</h3>
+            <ol>
+              <li>Video Games</li>
+              <li>Hanging with friends</li>
+              <li>Going on walks or hiking</li>
+              <li>Building solo projects</li>
+            </ol>
+
+            <h3 class="h5 fw-semibold mt-4">Favorite Websites</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">InstaGram</a></li>
+              <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="h5 fw-semibold">Weekly Schedule</h3>
+
+<div class="table-responsive">
+  <table class="table table-bordered align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Time</th>
+        <th scope="col">Activity</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Monday -->
+      <tr class="table-primary">
+        <td>Mon</td>
+        <td>10–11</td>
+        <td>Class</td>
+      </tr>
+      <tr class="table-primary">
+        <td>Mon</td>
+        <td>1–2</td>
+        <td>Class</td>
+      </tr>
+
+      <!-- Tuesday -->
+      <tr class="table-success">
+        <td>Tue</td>
+        <td>2–3:15</td>
+        <td>Class</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Tue</td>
+        <td>4–9</td>
+        <td>Work</td>
+      </tr>
+
+      <!-- Wednesday -->
+      <tr class="table-primary">
+        <td>Wed</td>
+        <td>10–11</td>
+        <td>Class</td>
+      </tr>
+      <tr class="table-primary">
+        <td>Wed</td>
+        <td>1–2</td>
+        <td>Class</td>
+      </tr>
+
+      <!-- Thursday -->
+      <tr class="table-success">
+        <td>Thu</td>
+        <td>2–3:15</td>
+        <td>Class</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Thu</td>
+        <td>4–9</td>
+        <td>Work</td>
+      </tr>
+
+      <!-- Friday -->
+      <tr class="table-primary">
+        <td>Fri</td>
+        <td>10–11</td>
+        <td>Class</td>
+      </tr>
+      <tr class="table-primary">
+        <td>Fri</td>
+        <td>1–2</td>
+        <td>Class</td>
+      </tr>
+
+      <!-- Saturday -->
+      <tr class="table-warning">
+        <td>Sat</td>
+        <td>4–9</td>
+        <td>Work</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Portfolio -->
+<section id="portfolio" class="section-pad bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Portfolio / Projects</h2>
+      <p class="text-muted mb-4">
+        A few highlighted projects and areas of work.
+      </p>
+  
+      <div class="row g-4">
+        <!-- TrustScan -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">TrustScan – Screenshot + Text Analysis Tool</h3>
+  
+              <div class="mt-auto">
+                <button
+                  class="btn btn-sm btn-outline-secondary"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#trustscanModal">
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Data Structures & Algos -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Data Structures & Algorithms Labs</h3>
+  
+              <div class="mt-auto">
+                <button
+                  class="btn btn-sm btn-outline-secondary"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#dsModal">
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Security -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Security / Networking Practice</h3>
+  
+              <div class="mt-auto">
+                <button
+                  class="btn btn-sm btn-outline-secondary"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#securityModal">
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- TrustScan Modal -->
+      <div class="modal fade" id="trustscanModal" tabindex="-1" aria-labelledby="trustscanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title h5" id="trustscanModalLabel">TrustScan — Details</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+  
+            <div class="modal-body">
+              <p>
+                TrustScan is a dating app safety tool that analyzes message content for scam-like patterns using a lightweight ML
+                classifier plus a rule-based override layer. The goal is a calm, “pause before you trust” second opinion.
+              </p>
+  
+              <h5 class="h6 fw-semibold mt-3">Key Features</h5>
+              <ul>
+                <li>Risk-focused pattern detection (urgent language, financial requests, pressure tactics)</li>
+                <li>One clear verdict with short reasoning</li>
+                <li>Safety-first wording (analyzes the message, not the person)</li>
+                <li>Designed for a simple browser workflow (for now)</li>
+              </ul>
+  
+              <h5 class="h6 fw-semibold mt-3">Tech / Tools</h5>
+              <ul class="mb-0">
+                <li>Python + ML model (classifier + vectorizer)</li>
+                <li>FastAPI backend</li>
+                <li>Rule/override layer for clearer results</li>
+              </ul>
+            </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Data Structures Modal -->
+      <div class="modal fade" id="dsModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title h5" id="dsModalLabel">Data Structures & Algorithms Labs (CSCI 161) — Details</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+  
+            <div class="modal-body">
+              <p>
+                Coursework projects implementing foundational data structures and benchmarking performance.
+                Focused on correctness, clean interfaces, and runtime comparisons.
+              </p>
+  
+              <h5 class="h6 fw-semibold mt-3">Highlights</h5>
+              <ul class="mb-0">
+                <li>Stacks, queues, and bags (array and linked implementations)</li>
+                <li>Binary trees / expression trees</li>
+                <li>Benchmarking experiments using nanoTime</li>
+              </ul>
+            </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Security Modal -->
+      <div class="modal fade" id="securityModal" tabindex="-1" aria-labelledby="securityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title h5" id="securityModalLabel">Security / Networking Practice — Details</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+  
+            <div class="modal-body">
+              <p>
+                Practice work covering core networking and security concepts with focus on understanding protocols,
+                ports/services, and common scanning terminology.
+              </p>
+  
+              <h5 class="h6 fw-semibold mt-3">Topics</h5>
+              <ul class="mb-0">
+                <li>Ports, services, and protocol fundamentals</li>
+                <li>Basic packet-level reasoning</li>
+                <li>Common scanning concepts and interpretations</li>
+              </ul>
+            </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+    <!-- Conact -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Contact</h2>
+        <p class="text-muted">Use the form below to reach out.</p>
+
+        <!-- Alert (Bootstrap component) -->
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input class="form-control" id="name" type="text" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input class="form-control" id="email" type="email" required />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+
+            <div class="col-12 d-flex gap-2 flex-wrap">
+              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="btn btn-outline-secondary" type="reset">Clear</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <small>&copy; 2026 Julian Schock</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const forms = document.querySelectorAll(".needs-validation");
+  
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener("submit", function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+  
+          form.classList.add("was-validated");
+        }, false);
+      });
+    })();
+  </script>
+  
+
+</body>
+</html>
